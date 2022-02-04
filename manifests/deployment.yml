@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: zaidmonisfreewheelers 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zaidmonisfreewheelers
+  template:
+    metadata:
+      labels:
+        app: zaidmonisfreewheelers 
+    spec:
+      containers:
+        - name: zaidmonisfreewheelers 
+          image: freewheelersregistry.azurecr.io/zaidmonisfreewheelers
+          ports:
+          - containerPort: 80
