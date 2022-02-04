@@ -13,7 +13,7 @@ variables:
   dockerRegistryServiceConnection: 'f545da16-c01e-4e37-ab64-c3cad5fd439e'
   imageRepository: 'zaidmonisfreewheelers'
   containerRegistry: 'freewheelersregistry.azurecr.io'
-  dockerfilePath: 'Dockerfile'
+  dockerfilePath: '$(Build.SourcesDirectory)/FreeWheelers/Dockerfile'
   tag: '$(Build.BuildId)'
 
   # Agent VM image name
