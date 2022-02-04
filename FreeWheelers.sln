@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelers", "FreeWheelers\FreeWheelers.csproj", "{7E0EC957-A317-488F-8F2F-374565581D18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelers.UnitTests", "FreeWheelers.UnitTests\FreeWheelers.UnitTests.csproj", "{3A15C158-5390-4B98-B47E-D3F216BCAFBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeWheelers.IntegrationTests", "FreeWheelers.IntegrationTests\FreeWheelers.IntegrationTests.csproj", "{97C00737-9FBF-4F2C-BF51-ED3DE0356DDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{7E0EC957-A317-488F-8F2F-374565581D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E0EC957-A317-488F-8F2F-374565581D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E0EC957-A317-488F-8F2F-374565581D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A15C158-5390-4B98-B47E-D3F216BCAFBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A15C158-5390-4B98-B47E-D3F216BCAFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A15C158-5390-4B98-B47E-D3F216BCAFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A15C158-5390-4B98-B47E-D3F216BCAFBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C00737-9FBF-4F2C-BF51-ED3DE0356DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C00737-9FBF-4F2C-BF51-ED3DE0356DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C00737-9FBF-4F2C-BF51-ED3DE0356DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C00737-9FBF-4F2C-BF51-ED3DE0356DDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
