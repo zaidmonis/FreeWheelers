@@ -22,7 +22,7 @@ namespace FreeWheelers.IntegrationTests
 
             response.EnsureSuccessStatusCode();
             var data = response.Content.ReadAsStringAsync().Result;
-            Assert.Equal("[\"a\",\"b\"]", data);
+            Assert.Equal("[\"a\",\"v\"]", data);
         }
     }
 }
