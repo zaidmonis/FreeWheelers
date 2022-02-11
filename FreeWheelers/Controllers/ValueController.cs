@@ -10,7 +10,7 @@ namespace FreeWheelers.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> GetValues()
         {
-            return new[] { "m", "n" };
+            return new[] { "x", "y" };
         }
     }
 }
