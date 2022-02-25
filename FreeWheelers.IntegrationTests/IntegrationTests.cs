@@ -13,7 +13,7 @@ namespace FreeWheelers.IntegrationTests
             _httpClient = fixture.Client;
         }
         
-        [Fact]
+        [Fact(Skip = "Not being run")]
         public async Task TestGetValuesAsync()
         {
             var request = "/api/value";
