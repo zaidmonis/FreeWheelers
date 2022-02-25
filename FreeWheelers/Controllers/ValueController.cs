@@ -1,3 +1,5 @@
+using FreeWheelers.Models;
+
 namespace FreeWheelers.Controllers
 {
     using System.Collections.Generic;
@@ -7,10 +9,17 @@ namespace FreeWheelers.Controllers
     [ApiController]
     public class ValueController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> GetValues()
+        private readonly ProductContext _productContext;
+
+        public ValueController(ProductContext productContext)
         {
-            return new[] { "x", "y" };
+            _productContext = productContext;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Product>> GetValues()
+        {
+            return _productContext.Products;
         }
     }
 }
