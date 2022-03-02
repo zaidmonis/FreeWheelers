@@ -6,13 +6,13 @@ pipelines:
     lock_behavior: none
     display_order: -1
     materials:
-      git-3d81eda:
+      git-e09dcac:
         git: https://github.com/zaidmonis/FreeWheelers
         shallow_clone: false
         auto_update: true
         branch: master
     stages:
-    - Test:
+    - Unit-Test:
         fetch_materials: true
         keep_artifacts: false
         clean_workspace: false
