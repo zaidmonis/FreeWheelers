@@ -29,3 +29,20 @@ pipelines:
                 - FreeWheelers.UnitTests
                 command: dotnet
                 run_if: passed
+    - build-and-deploy:
+        fetch_materials: true
+        keep_artifacts: false
+        clean_workspace: false
+        approval:
+          type: success
+          allow_only_on_success: false
+        jobs:
+          deploy:
+            timeout: 0
+            tasks:
+            - exec:
+                arguments:
+                  - up
+                command: docker-compose
+                working_directory: ./FreeWheelers
+                run_if: passed
