@@ -8,7 +8,7 @@ namespace FreeWheelers.UnitTests
         [Fact]
         public void Test1()
         {
-            Assert.True(true, "Test is passed");
+            Assert.True(true, "Test passed");
         }
     }
 }
