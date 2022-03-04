@@ -43,6 +43,7 @@ pipelines:
             - exec:
                 arguments:
                   - up
+                  - - d
                 command: docker-compose
                 working_directory: ./FreeWheelers
                 run_if: passed
